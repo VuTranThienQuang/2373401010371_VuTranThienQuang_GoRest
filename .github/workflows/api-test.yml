@@ -29,8 +29,8 @@ jobs:
             exit 1
           fi
 
-          newman run GoRest_Collection.json \
-            -e GoRest_Environment.json \
+          newman run 2373401010371_VuTranThienQuang_GoRest.postman_collection.json \
+            -e 2373401010371_VuTranThienQuang_GoRest.postman_environment.json \
             -d users.csv \
             --env-var "token=$GOREST_TOKEN" \
             --reporters cli
